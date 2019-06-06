@@ -15,10 +15,10 @@ try:
     epd.Clear(0xFF)
 
     print("read png file")
-    imb = Image.open('img/oslogo-b.png')
+    imb = Image.open('img/logo-reverse-b.png')
     # outb = imb.resize((405, 428))
     print(imb.format, imb.size, imb.mode)
-    imr = Image.open('img/oslogo-r.png')
+    imr = Image.open('img/logo-reverse-r.png')
     # outr = imr.resize((405, 428))
     print(imr.format, imr.size, imr.mode)
     epd.display(epd.getbuffer(imb), epd.getbuffer(imr))
