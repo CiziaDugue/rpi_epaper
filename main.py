@@ -16,12 +16,12 @@ try:
 
     print("read png file")
     imb = Image.open('img/oslogo-b.png')
-    outb = imb.resize((405, 428))
-    print(outb.format, outb.size, outb.mode)
+    # outb = imb.resize((405, 428))
+    print(imb.format, imb.size, imb.mode)
     imr = Image.open('img/oslogo-r.png')
-    outr = imr.resize((405, 428))
-    print(outr.format, outr.size, outr.mode)
-    epd.display(epd.getbuffer(outb), epd.getbuffer(outr))
+    # outr = imr.resize((405, 428))
+    print(imr.format, imr.size, imr.mode)
+    epd.display(epd.getbuffer(imb), epd.getbuffer(imr))
     time.sleep(2)
 
     epd.sleep()
